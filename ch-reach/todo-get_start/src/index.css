@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', 'Kanit', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #38bdf8;
+  color: #2b93b9;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.section {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #cbd5e1;
+  margin: 0.5rem 0;
+}
+
+/* Button 1: Toggle Button */
+.toggle-btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+  border: 2px solid #475569;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.toggle-btn.is-red {
+  background-color: #ff0000;
+  color: #000000;
+}
+
+.toggle-btn.is-blue {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+
+.toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.toggle-btn:active {
+  transform: translateY(0);
+}
+
+/* Section 2: Text & Color */
+.text-display {
+  font-size: 1.5rem;
+  font-weight: 600;
+  min-height: 2rem;
+  word-break: break-word;
+  transition: color 0.2s ease;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.text-input {
+  flex: 1;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.text-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.color-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 38px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-input::-webkit-color-swatch {
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+}
+
+/* Section 3: Counter */
+.counter-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.action-btn {
+  padding: 0.45rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.action-btn:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+.action-btn:active {
+  background-color: #cbd5e1;
+}
